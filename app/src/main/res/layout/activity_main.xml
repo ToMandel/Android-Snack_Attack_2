@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Game_2.activities.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.45"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/img_background" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/game_font"
+            android:gravity="center"
+            android:text="Snack Attack"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_start_game"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="155dp"
+            android:fontFamily="@font/game_font"
+            android:padding="15dp"
+            android:text="start game"
+            android:textColor="#20243A"
+            android:textSize="40sp"
+            app:backgroundTint="#8BC34A"
+            app:cornerRadius="120dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_BTN_high_scores"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/game_font"
+            android:padding="15dp"
+            android:text="high scores"
+            android:textColor="#20243A"
+            android:textSize="40sp"
+            app:backgroundTint="#8BC34A"
+            app:cornerRadius="120dp"
+            app:iconTint="#20243A" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

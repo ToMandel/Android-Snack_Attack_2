@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Game_2.activities.GameOverActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/gameOver_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.45"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/img_background" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gameover_LBL_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/game_font"
+            android:text="GAME OVER"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gameover_LBL_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/game_font"
+            android:text="enter your name:"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gameover_EDT_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/game_font"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gameover_BTN_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/game_font"
+            android:text="enter"
+            android:textColor="#20243A"
+            android:textSize="30sp"
+            app:backgroundTint="#8BC34A"
+            app:cornerRadius="120dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
